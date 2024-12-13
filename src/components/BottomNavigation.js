@@ -70,6 +70,18 @@ function BottomNavigation() {
                     <p className="text-xs text-center text-white">Daily</p> {/* Teks putih */}
                 </div>
             </div>
+            {/* AirDrop Button */}
+            <div
+                onClick={() => navigate("/airdrop")}
+                className={`flex-col items-center justify-center w-14 h-14 rounded-lg ${
+                    currentScreen === "/airdrop" ? "bg-black" : "bg-gray-900"
+                }`}
+            >
+                <div className="flex flex-col items-center justify-center">
+                    <img className="w-8 h-8 object-contain" src={blockchain} alt="AirDrop" />
+                    <p className="text-xs text-center text-white">AirDrop</p> {/* Teks putih */}
+                </div>
+            </div>
         </nav>
     );
 }
